@@ -6,5 +6,5 @@ if not exist %bundle_path% (
     git clone https://github.com/VundleVim/Vundle.vim.git %USERPROFILE%\.vim\bundle\vundle
 )
 
-powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/deepwellice/vimconf/master/vimrc -OutFile %USERPROFILE%\_vimrc"
+powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/deepwellice/vimconf/master/vimrc.txt -OutFile %USERPROFILE%\_vimrc"
 

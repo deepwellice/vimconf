@@ -2,7 +2,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/vundle
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -20,9 +20,9 @@ Plugin 'gmarik/Vundle.vim'
 "Plugin 'davidhalter/jedi-vim'
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'tmhedberg/SimpylFold'
-#Plugin 'Valloric/YouCompleteMe'
-#Plugin 'scrooloose/nerdtree'
-#Plugin 'Xuyuanp/nerdtree-git-plugin'
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'scrooloose/nerdtree'
+"Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 "" plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
