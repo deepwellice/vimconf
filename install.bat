@@ -1,4 +1,4 @@
-REM @echo off
+@echo off
 
 set bundle_path=%USERPROFILE%\.vim\bundle
 if not exist %bundle_path% (
