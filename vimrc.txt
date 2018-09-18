@@ -20,6 +20,7 @@ Plugin 'gmarik/Vundle.vim'
 "Plugin 'davidhalter/jedi-vim'
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'tmhedberg/SimpylFold'
+Plugin 'scrooloose/nerdcommenter'
 "Plugin 'Valloric/YouCompleteMe'
 "Plugin 'scrooloose/nerdtree'
 "Plugin 'Xuyuanp/nerdtree-git-plugin'
@@ -63,9 +64,12 @@ set shiftwidth=4
 set expandtab
 syn on
 set ruler
-set listchars=tab:->,trail:-
+set listchars=tab:->,trail:-,space:·
 set list
 set showcmd
+
+autocmd BufNewFile,BufRead Jenkinsfile set syntax=Groovy
+" au FileType Groovy setl sw=2 ts=2 et
 
 if has("multi_byte")
   if &termencoding == ""
@@ -88,3 +92,4 @@ endif
 
 " au BufRead * let &numberwidth = float2nr(log10(line("$"))) + 2
 "           \| let &columns = &numberwidth + 80
+
