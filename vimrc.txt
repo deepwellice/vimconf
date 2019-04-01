@@ -70,6 +70,9 @@ set listchars=tab:->,trail:-,space:·
 set list
 set showcmd
 
+" netrw settings
+let g:netrw_banner = 0
+
 autocmd BufNewFile,BufRead Jenkinsfile set syntax=Groovy
 " au FileType Groovy setl sw=2 ts=2 et
 
@@ -83,7 +86,6 @@ if has("multi_byte")
   set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 "euc-cn,cp950,latin1,ucs-bom,utf-8
 endif
-
 " augroup vimrc_autocmds
 "     autocmd!
 "     " highlight characters past column 120
@@ -94,4 +96,6 @@ endif
 
 " au BufRead * let &numberwidth = float2nr(log10(line("$"))) + 2
 "           \| let &columns = &numberwidth + 80
-
+if has('win32')
+    au GUIEnter * simalt ~x
+endif
